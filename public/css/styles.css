@@ -1,16 +1,46 @@
 * {
     margin: 0;
     padding: 0;
-}
-
-.title {
-    list-style-type: none;
+    box-sizing: border-box;
 }
 
 body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    text-align: center;
+}
+
+.movie-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 items per row */
+    gap: 20px; /* Space between grid items */
+    list-style-type: none; /* Remove bullets from the list */
+    padding: 0;
+}
+
+.movie-grid li {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     text-align: center;
+}
+
+img {
+    width: 300px; /* Adjust as needed */
+    height: auto;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a soft shadow */
+    border-radius: 8px; /* Optional: adds rounded corners to the images */
+    transition: 0.3s ease-in-out; 
+}
+
+img:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.9); /* Darker shadow on hover */
+    width: 350px;
+    transition: 0.5s;
+}
+
+.title {
+    font-size: 1rem;
+    color: #333;
 }

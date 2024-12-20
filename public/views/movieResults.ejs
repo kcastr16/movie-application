@@ -8,13 +8,15 @@
 </head>
 <body class="results">
     <h1>Similar Movies</h1>
-    <ul>
+    <ul class="movie-grid">
         <% titles.forEach(function(item) { %>
-            <li class="title"><%= item %></li>
+            <li>
+                <img src="<%= item.poster %>" alt="Poster for <%= item.title %>">
+                <div class="title"><%= item.title %></div>
+            </li>
         <% }); %>
-        
     </ul>
-
     <a href="/" class="button">Go Back Home</a> 
 </body>
 </html>
+

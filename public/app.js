@@ -37,11 +37,14 @@ app.get('/get-similar', async (req, res) => {
         let movieArr = similarMovies.results;
         let movieTitles = []
 
-
+        //console.log(movieArr)
         movieArr.forEach((movie) =>{
-            movieTitles.push(movie.title)
+            movieTitles.push({ 
+                title: movie.title,
+                poster: `https://image.tmdb.org/t/p/w500${movie.poster_path}`
+              })
         })
-
+        console.log(movieTitles)
         res.render('movieResults', {
             titles: movieTitles
         });
