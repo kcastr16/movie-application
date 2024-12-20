@@ -1,0 +1,2 @@
+A simple application that lets a user input a keyword. The website will then display movies similar to that keyword or movie input by the user. The user can search for similar movies that will then be displayed in a user-friendly interface grid layout. 
+A link to the deployed website can be found, click [here](https://movie-app-kevin-1a75b2172c0c.herokuapp.com/)
