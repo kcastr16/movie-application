@@ -3,15 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/styles.css" defer>
     <title>Movie Results</title>
 </head>
 <body class="results">
     <h1>Similar Movies</h1>
     <ul>
         <% titles.forEach(function(item) { %>
-            <li><%= item %></li>
+            <li class="title"><%= item %></li>
         <% }); %>
+        
     </ul>
 
     <a href="/" class="button">Go Back Home</a> 
