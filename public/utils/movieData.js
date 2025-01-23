@@ -1,6 +1,6 @@
 const axios = require('axios');
 
-const API_KEY = '4cec2ddfc502e16f0390dd6f0188dc39'; // Delete this string before uploading to github
+const API_KEY = 'api_keyHEre'; // Delete this string before uploading to github
 
 const getId = async (query) => {
     try { // URL: https://api.themoviedb.org/3/movie/popular
